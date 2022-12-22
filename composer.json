@@ -1,41 +1,48 @@
 {
-  "name": "mayunfeng/laravel-feishu",
-  "description": "飞书 SDK for Laravel",
-  "keywords": [
-    "laravel",
-    "feishu",
-    "larksuite",
-    "feishu-sdk",
-    "larksuite-sdk",
-    "sdk"
-  ],
-  "minimum-stability": "stable",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "马运锋",
-      "email": "yunfeng0614@qq.com"
+    "name": "normalcoder/laravel-feishu",
+    "description": "飞书 SDK for Laravel",
+    "keywords": [
+        "laravel",
+        "feishu",
+        "larksuite",
+        "feishu-sdk",
+        "larksuite-sdk",
+        "sdk"
+    ],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "马运锋",
+            "email": "yunfeng0614@qq.com",
+            "role": "Developer"
+        },
+        {
+            "name": "诺墨",
+            "email": "normal@normalcoder.com",
+            "homepage": "https://normalcoder.com",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "laravel/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "normalcoder\\LaravelFeishu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "normalcoder\\LaravelFeishu\\ServiceProvider"
+            ],
+            "aliases": {
+                "LaravelFeishu": "EasyFeishu"
+            }
+        }
+    },
+    "require": {
+        "normalcoder/easy-feishu": "^1.0"
     }
-  ],
-  "require-dev": {
-    "laravel/framework": "^6.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Mayunfeng\\LaravelFeishu\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Mayunfeng\\LaravelFeishu\\ServiceProvider"
-      ],
-      "aliases": {
-        "LaravelFeishu": "EasyFeishu"
-      }
-    }
-  },
-  "require": {
-    "mayunfeng/easy-feishu": "^1.0"
-  }
 }
